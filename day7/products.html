@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Listing </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Root Element</h1>
+    <select name="sorting" id="sort">
+        <option value="">Price Sorting</option>
+        <option value="asc">Price Low to High</option>
+        <option value="desc">Price Hight to Low</option>
+    </select>
+
+    <h1>Filter by Category</h1>
+
+    <div class="filter" style="text-align: center;">
+        <button id="electronics"> Electronics</button>
+        <button id="homeKitchen" >Home & Kitchen</button>
+        <button id="fashion">Fashion</button>
+        <button id="sports">Outdoor & Sports</button>
+        <button id="toys">Toys & Games</button>
+        <button id="beauty">Beauty & Personal Care</button>
+    </div>
+
+    <div class="root">
+        <!-- display products here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

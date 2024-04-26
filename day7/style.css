@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.root {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);    
+    margin: auto;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box h3 , p {
+    padding-left: 10px;
+    line-height: 10px;
+}
