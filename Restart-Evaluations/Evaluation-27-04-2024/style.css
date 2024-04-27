@@ -4,8 +4,31 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
 }
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
+.nav-container {
+    height: 80px;
+    width: 90%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.nav-container h1 {
+    font-size: 35px;
+}
+
+.nav-container select , input {
+    font-size: 15px;
+}
 
 #products {
     width: 60%;
@@ -13,6 +36,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-gap: 50px;
+    margin-top: 100px;
 }
 
 .product-content {

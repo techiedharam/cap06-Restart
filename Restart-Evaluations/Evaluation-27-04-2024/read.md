@@ -6,3 +6,4 @@ This web application allows users to browse a list of products across various ca
 3. Sorting: Products can be sorted by price, either from low to high or high to low.
 Enjoy exploring and discovering new products with ease!
 
+![alt text](image.png)
