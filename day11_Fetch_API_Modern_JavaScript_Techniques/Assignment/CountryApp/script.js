@@ -27,7 +27,7 @@ const showCountry = (countryData) => {
         )
         rootElement.appendChild(
             countryDiv
-        )
+        )   
 
    })
 
