@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #products-container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 50px;
+            grid-gap: 20px;
+        }
+
+        .product-box {
+            background-color: #fff;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .product-box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-box h2,
+        .product-box p {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        #adminBtn {
+            background-color: darkgreen;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-left: 10%;
+        }
+
+        #adminBtn:hover {
+            background-color: lightgreen;
+            color: black;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="adminBtn">Admin Page</button>
+    <div id="products-container"></div>
+
+    <script>
+        // Catch the Element
+        const productContainer = document.getElementById('products-container');
+        const adminButton = document.getElementById('adminBtn');
+
+        adminButton.addEventListener('click', () => {
+            window.location.href = "admin.html";
+        });
+
+        let showData = (productList) => {
+            productContainer.innerHTML = "";
+
+            productList.forEach((item) => {
+
+                const productBox = document.createElement('div');
+                productBox.className = "product-box";
+
+                const pImg = document.createElement('img');
+                pImg.src = item.img;
+
+                const pName = document.createElement('h2');
+                pName.textContent = item.title;
+
+                const pPrice = document.createElement('p');
+                pPrice.textContent = item.price;
+
+                productBox.append(
+                    pImg,
+                    pName,
+                    pPrice
+                );
+                productContainer.appendChild(
+                    productBox
+                );
+
+            });
+        };
+
+        let getData = async (url) => {
+            try {
+                let response = await fetch(url);
+                let finalResponse = await response.json();
+                showData(finalResponse);
+                console.log(finalResponse);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        getData('http://localhost:3000/products');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Bluetooth Earbuds",
+      "price": 39.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 2,
+      "title": "Portable Power Bank Charger",
+      "price": 29.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 3,
+      "title": "Smartphone Case with Card Holder",
+      "price": 19.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 4,
+      "title": "Stainless Steel Water Bottle",
+      "price": 14.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 5,
+      "title": "Wireless Charging Pad",
+      "price": 24.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 6,
+      "title": "Foldable Laptop Stand",
+      "price": 34.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 7,
+      "title": "Bluetooth Speaker",
+      "price": 49.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 8,
+      "title": "LED Desk Lamp",
+      "price": 27.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 9,
+      "title": "Digital Alarm Clock",
+      "price": 9.99,
+      "img": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 10,
+      "title": "Wireless Mouse",
+      "price": 19.99,
+      "img": "https://via.placeholder.com/300"
+    }
+  ]
+}
